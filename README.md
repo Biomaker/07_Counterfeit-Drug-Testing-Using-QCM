@@ -1,26 +1,29 @@
-Here are some loose guidlines meant to give you an idea of what information we expect to find in each repository. Feel free to present your documentation in the most accessible/suitable order and style but you **must** include project data relating to the headings below, if relevant to your project. Also, include your final proposal in the top directory.
-
-[**A very good example**](https://github.com/Biological-Microsystems-Laboratory/micropipette)
-
-Consider using [GitHub for desktop](https://desktop.github.com/), the user interface and experience is so much better than the web version of Github, in my opinion.
-
-Lastly, follow [these](https://pages.github.com/) instructions if you want to style your github repository into a webpage like [so](https://biomakers.github.io/Example-repo/).
-
 ## Synopsis
 
-A summary of your project. This is the 150 word description from your proposal. Include your project banner and photos of team members.
+Malaria kills approximately a million people each year, and although efforts to produce and distribute effective drugs has increased, there is a growing problem with forged medications. Counterfeit antimalarial drugs cause an estimated 120,000 deaths in Africa per year , and detection methods are too expensive and/or too technically complex. Our objective is the development of a low cost counterfeit drug detection system that can be easily used in low-resource settings. The system builds on open-source quartz crystal microbalance technology to detect the presence of the active drug and its concentration. Easily contained in a handheld device that will give real-time feedback to the user, our method ensures the efficacy of global health measures by contributing to effective malaria elimination in at-risk communities.
 
 ## Software
 
-Explain functionality of software components (if any) as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Ideally, this should be pseudo code or an abstract graphical representation of your code e.g entity relationship diagram. Consider adding a screenshot of your User Interface.
+The frequency output of the oscilator was connected to Arduino pin 5 as this is this pin must be used on the Arduino Uno when using the 16bit Timer/Counter1 of the ATmega chip as our code does.
+The LCD was connected to pins 8,9,10,6,12,13 corresponding to RS,E,D4,D5,D6,D7 on our LCD display. Pin 6 was used instead of pin 11 as we anticipated using a buzzer output with the inbuilt "tone" function which can cause instabilities on pins 3 and 11. 
 
 ## Hardware
 
-Explain how the hardware components (if any) of your project function as concisely as possible, including a short description of fabrication and assembly. Component suppliers and part numbers should be provided separately in a bill of materials, in a 'Hardware Folder'.
+The included electrical schematics were used to set up the device. However the thermoresitor was excluded from our final implementation (couldn't get it to read in a reasonable valure).
+
+The included CAD models were printed on an Ulitimaker 3. The inlet ports were connected to 2mm OD Silicone tubing whihc caused a press fit.
+
+Rubber nitrile o-rings were used to support the QCM and form a seal.
+
+M3 nuts and bolts were used to clamp the assembly together.
 
 ## Installation, Maintenance and Testing Guide
 
-Provide instructions on usage, describe a test scheme and show how to run the tests with code and hardware configuration examples with some representative results.
+The frequency output of the oscilator was directed to pin 5 and written to the connected LCD.
+
+Ideally this value would be compared to a stored value for the expected frequency response of the target analyte.
+
+Pins 8-13 were used for readout to the LCD display
 
 ## License
 
