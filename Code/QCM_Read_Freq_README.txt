@@ -1,0 +1,1 @@
+This code was adapted from the OpenQCM firmware for Arduino Micro http://openqcm.com/software by InigoAyestaran as part of the BioMaker challenge 2017
